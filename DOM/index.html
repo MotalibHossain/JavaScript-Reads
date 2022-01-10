@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="heading1">JS_DOM learning. Basic part</h1>
-    <h1 id="heading2">JS_DOM learning. Secound part</h1>
-    <h1 class="heading3">JS_DOM learning. Basic part</h1>
-    <h1 class="heading4">JS_DOM learning. Basic part</h1>
+    <div class="container">
+        <h1 class="heading1">JS_DOM learning. Basic part</h1>
+        <h1 id="heading2">JS_DOM learning. Secound part</h1>
+        <h1 class="heading3">JS_DOM learning. Basic part</h1>
+        <h1 class="heading4">JS_DOM learning. Basic part</h1>
 
-    <ul class="userList">
-        <li>1st</li>
-        <li>2nd</li>
-    </ul>
-    <button class="btn2">Create Button</button>
-    <button class="createForm mt-3">Create form</button>
-  
-    <div class="form_add mt-5">
-        <form class="form1" action="">
-            <input class="list_input" type="text"/>
-            <input class="btn1" type="button" value="Create li">
-        </form>
-    </div>
-    <div class="row">
-        
+        <ul class="userList">
+            <li>1st</li>
+            <li>2nd</li>
+        </ul>
+        <button class="btn1" type="button">Create li</button>
+        <button class="btn2">Create Button</button>
+
+        <button class="createForm mt-3">Create form</button>
+
+        <div class="row form_add mt-5">
+            <div class="col-lg-12">
+                <form class="form1" action="">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control list_input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
     </div>
     <script src="JS_DOM.js"></script>
 </body>
