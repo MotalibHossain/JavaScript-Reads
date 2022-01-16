@@ -44,17 +44,6 @@ btn2.addEventListener('click', function(){
 // using cleck event create a form and create input field into a form 
 
 createForm.addEventListener('click', function(){
-    // const create_div=document.createElement("div");
-    // create_div.setAttribute('class', 'col-lg-12 addFormDiv');
-    // form_add.appendChild(create_div);
-
-    // const addFormDiv=document.querySelector(addFormDiv)
-    // const create_div2=document.createElement("div");
-    // create_div2.setAttribute('class', 'mb-3 addForm');
-    // form_add.appendChild(create_div2);
-
-    // const addForm=document.querySelector(addForm)
-
     const create_form=document.createElement('FORM');
     create_form.setAttribute('id', 'myform');
     form_add.appendChild(create_form);
@@ -63,7 +52,15 @@ createForm.addEventListener('click', function(){
 createForm.addEventListener('click', function(){
     const create_input=document.createElement("INPUT");
     create_input.setAttribute("type", "text");
-    create_input.setAttribute('class', 'form-control');
+    create_input.setAttribute('class', 'form-control mb-3');
     add=document.getElementById("myform");
     add.appendChild(create_input);
+})
+
+//====================Keyup events=====================
+const typeup=document.getElementById('heading4')
+
+form1.addEventListener('keyup', function(e){
+    e.preventDefault()
+    typeup.innerText=e.target.value
 })
