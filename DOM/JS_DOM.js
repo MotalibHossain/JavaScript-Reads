@@ -1,21 +1,21 @@
 // In the first fime to learn js DOM. You need to know about Selectors.
 // select id wise 
 const heading=document.getElementById("heading2")
-heading.style.color='red';
+heading.style.color='#786a6c';
 
 // select class wise
 // getElementsByClassName return an array that's why we use a array indexing
 const heading3=document.getElementsByClassName("heading3");
-heading3[0].style.color='blue';
+heading3[0].style.color='black';
 console.log(heading3)
 
 // select querySelector wise
 const x=document.querySelector('.heading1');
-x.style.color='blue';
+x.style.color='black';
 
 // select querySelector all wise
 const heading4=document.querySelector('.heading4');
-heading4.style.color='pink';
+heading4.style.color='#815d63';
 
 // ==================JavaScripts Events ======================
 
@@ -64,3 +64,78 @@ form1.addEventListener('keyup', function(e){
     e.preventDefault()
     typeup.innerText=e.target.value
 })
+
+
+//====================Template strings==================== 
+let company='Travnet Tech';
+let name=`This is our ${company}`;
+const template_string= document.querySelector('.template_string');
+
+template_string.innerHTML=name;
+
+//============== Append a html from using jquery==============
+$(document).ready(function(){
+    
+    let btn_number=0
+    $('#plus').click(function(){
+        // Increase the button number value and add class name  
+        btn_number++
+        $('#btn-1').addClass("{btn_number}")
+        $('#btn-1').value=btn_number
+
+        // --------------create from --------------
+        $('.form1').append(`<div><form action="#">
+        <div class="row">
+            <div class="col-lg-10 col-md-9 col-sm-12">
+                <div class="mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" >
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 ">
+                <div class="mb-3">
+                    <label for=""></label>
+                    <input type="submit" value="Btn-${btn_number}" id="btn-${btn_number}" class="form-control p-1">
+                </div>
+            </div>
+        </div>
+    </form></div>`)
+    })
+
+    // --------------Remove from --------------
+    $('#minus').click(function(){
+        $('.form1').children("div:last").remove()
+    })
+})
+
+
+
+//============== Append a html from using JavaScript==============
+let form=document.querySelector('.form2');
+let form_main=document.querySelector('.form_main');
+let plus1=document.querySelector('#plus1');
+let minus1=document.querySelector('#minus1');
+
+
+function createForm1(){
+    form.insertAdjacentHTML("afterend",`<div><form action="#">
+    <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" >
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-12 ">
+            <div class="mb-3">
+                <label for=""></label>
+                <input type="submit" value="Btn-" id="btn-" class="form-control p-1">
+            </div>
+        </div>
+    </div>
+</form></div>`)
+};
+
+function removeForm(){
+    form_main.removeChild(form_main.lastChild)
+};
