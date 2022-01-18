@@ -58,6 +58,7 @@ createForm.addEventListener('click', function(){
 })
 
 //====================Keyup events=====================
+const form2=document.querySelector('.form')
 const typeup=document.getElementById('heading4')
 
 form1.addEventListener('keyup', function(e){
@@ -116,9 +117,11 @@ let form_main=document.querySelector('.form_main');
 let plus1=document.querySelector('#plus1');
 let minus1=document.querySelector('#minus1');
 
-
+let btn_number=0
 function createForm1(){
-    form.insertAdjacentHTML("afterend",`<div><form action="#">
+    btn_number++ // when i create a form then btn-number are increase
+
+    form.insertAdjacentHTML("beforeend",`<div id="form-${btn_number}"><form action="#">
     <div class="row">
         <div class="col-lg-10 col-md-9 col-sm-12">
             <div class="mb-3">
@@ -129,13 +132,46 @@ function createForm1(){
         <div class="col-lg-2 col-md-3 col-sm-12 ">
             <div class="mb-3">
                 <label for=""></label>
-                <input type="submit" value="Btn-" id="btn-" class="form-control p-1">
+                <input onclick="removeForm()" type="submit" value="btn-${btn_number}" id="btn-${btn_number}" class="form-control p-1">
             </div>
         </div>
     </div>
 </form></div>`)
 };
-
+//============== Remove Form==============
 function removeForm(){
-    form_main.removeChild(form_main.lastChild)
+    btn_number //whwn i create form then the form or button number increase
+    Btn=`form-${btn_number}`
+    let button_num=document.getElementById(Btn)
+    button_num.remove()
+    btn_number-- 
 };
+
+//==============JavaScript Arrow Function==============
+let summation=(...arguments)=>{
+    let sum=0
+    for(let i in arguments){
+        sum=sum+arguments[i];
+        // console.log(sum)
+    }
+    console.log(sum);
+};
+
+summation(10,20,30)
+
+//==============Go to top using javascript==============
+const go_to_top=document.getElementById('go_to_top')
+window.onscroll = function() {Go_to_top()};
+
+function Go_to_top(){
+    if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+        go_to_top.style.display = "block";
+    }else{
+        go_to_top.style.display = "none";
+    }
+}
+
+go_to_top.addEventListener('click',function(){
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+})
