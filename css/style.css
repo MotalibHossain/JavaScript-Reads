@@ -13,5 +13,17 @@
     color: white; 
     cursor: pointer; 
 }
+#reportrange{background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 100%"
+}
+.daterangepicker {
+    background-color: #ccc;
+}
+.range{
+    background-color: darkgrey;
+}
 
   
