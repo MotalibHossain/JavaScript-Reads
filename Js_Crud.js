@@ -91,4 +91,3 @@ function resetForm(){
     document.getElementById('status').value="";
     eachSelectRow=null
 }
-

@@ -25,5 +25,15 @@
 .range{
     background-color: darkgrey;
 }
-
+/* calender  */
+.daterangepicker .drp-calendar.right, .daterangepicker .drp-calendar.left {
+    padding: 8px;
+    background: whitesmoke;
+}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect{
+    border-radius: 9px;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    border-radius: 52%;
+}
   

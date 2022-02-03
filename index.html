@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS_DOM</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--------------------------- bootstrap icon ------------------------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!--------------------------- bootstrap 5 ----------------------------- -->
@@ -36,7 +38,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control list_input mb-1" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Please type heare and and create li...." >
+                            aria-describedby="emailHelp" placeholder="Please type heare and and create li....">
                     </div>
                     <button type="submit" class="btn btn-primary mb-3">Submit</button>
                 </form>
@@ -132,15 +134,16 @@
                                 <th>operations</th>
                             </tr>
                         </thead>
-                        <tbody >
-                            
+                        <tbody>
+
                         </tbody>
                     </table>
                 </div>
                 <div class="col-md-3">
                     <!-- <p>plus minus button here</p> -->
                     <div class="ms-5 h1">
-                        <i id="plus1" class="bi bi-plus-circle-fill me-3 ms-3" data-bs-toggle="modal" data-bs-target="#myModal"></i>
+                        <i id="plus1" class="bi bi-plus-circle-fill me-3 ms-3" data-bs-toggle="modal"
+                            data-bs-target="#myModal"></i>
                         <!-- The Modal -->
                         <div class="modal fade" id="myModal">
                             <div class="modal-dialog">
@@ -156,19 +159,21 @@
                                         <div class="To_do_list">
                                             <form id="formSubmit">
                                                 <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <input type="text" id="To_Do" name="To_Do" placeholder="Add your to do list"
-                                                        class="form-control" id="inputPhone" required />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <select name="status" id="status" class="form-select"
-                                                        aria-label="Default select example"  required>
-                                                        <option value="">Status</option>
-                                                        <option value="Active">Active</option>
-                                                        <option value="suspend">suspend</option>
-                                                    </select>
-                                                </div>
-                                                <input type="submit" value="Submit" class="btn btn-success submit mt-5"/>
+                                                    <div class="col-md-6">
+                                                        <input type="text" id="To_Do" name="To_Do"
+                                                            placeholder="Add your to do list" class="form-control"
+                                                            id="inputPhone" required />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <select name="status" id="status" class="form-select"
+                                                            aria-label="Default select example" required>
+                                                            <option value="">Status</option>
+                                                            <option value="Active">Active</option>
+                                                            <option value="suspend">suspend</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="submit" value="Submit"
+                                                        class="btn btn-success submit mt-5" />
                                             </form>
                                         </div>
                                     </div>
@@ -188,17 +193,25 @@
         <!-- daterange picker -->
         <h1 class="text-center">Date Range Pcicker</h1>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div id="reportrange">
-                <span id="reportrange_span"></span>
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
             </div>
         </div>
+
+
         <!-- End daterange picker  -->
         <br>
         <br>
         <br>
         <br>
     </div>
+
+
+
 
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -207,13 +220,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <!-- date range picker  -->
+
+    date range picker
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- main js  -->
     <script src="JS_DOM.js"></script>
     <script src="Js_Crud.js"></script>
     <script src="datepicker.js"></script>
+
 </body>
 
 </html>
