@@ -15,7 +15,7 @@
 
 
 
-# Resource:
+
         [https://motalibhossain.github.io/portfolio/](https://motalibhossain.github.io/portfolio/)
     1.[https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date] (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
     2.Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery
