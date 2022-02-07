@@ -59,7 +59,9 @@ $(function() {
             // 'Last Year': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')],
             // 'This Year': [moment().startOf('year'), moment().endOf('year')],
         },
-    },function(start, end) {
+    },
+    // callback function 
+    function(start, end) {
         $('#reportrange span').html(start.format('YYYY-MM-DD') + '&nbsp; - &nbsp; ' + end.format('YYYY-MM-DD'));
         
     });
@@ -70,8 +72,13 @@ $(function() {
 
 // Events 
 // when you want to pick value from input box 
+// $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+//     var startDate = picker.startDate;
+//     var endDate = picker.endDate;
+//     alert("New date range selected: '" + startDate.format('YYYY-MM-DD') + "' to '" + endDate.format('YYYY-MM-DD') + "'");
+// });
 $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
-    var startDate = picker.startDate;
-    var endDate = picker.endDate;
-    alert("New date range selected: '" + startDate.format('YYYY-MM-DD') + "' to '" + endDate.format('YYYY-MM-DD') + "'");
-  });
+    $("#inp1").val(picker.startDate.format('DD/MM/YYYY'));
+    $("#inp2").val(picker.endDate.format('DD/MM/YYYY'));
+    $('#show').html(picker.startDate.format('DD/MM/YYYY') + " - " + picker.endDate.format('DD/MM/YYYY'));
+});

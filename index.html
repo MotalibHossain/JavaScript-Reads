@@ -13,115 +13,19 @@
     <!--------------------------- bootstrap 5 ----------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--------------------------- daterange picker css ------------------------- -->
+    <!--------------------------- Plugins cdn css ------------------------- -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
     <!--------------------------- Main css ------------------------- -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="heading1">JS_DOM learning. Basic part</h1>
-        <h1 id="heading2">JS_DOM learning. Secound part</h1>
-        <h1 class="heading3">JS_DOM learning. Basic part</h1>
-        <h1 class="heading4">JS_DOM learning. Basic part</h1>
-        <h1 class="template_string"></h1>
-        <h1 id="heading4">keyup=</h1>
-
-        <ul class="userList">
-            <li>1st</li>
-            <li>2nd</li>
-        </ul>
-        <div class="row form_add mt-5">
-            <div class="col-lg-12">
-                <form class="form" action="">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control list_input mb-1" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Please type heare and and create li....">
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="" id="">
-            <button class="btn1" type="button">Create li</button>
-            <button class="btn2">Create Button</button>
-            <button class="createForm mt-3">Create form</button>
-        </div>
-        <hr>
-        <h1 class="text-center">Create new from using Jquery</h1>
-        <hr>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 form1">
-                <!-- <div> -->
-                <form action="#">
-                    <div class="row">
-                        <div class="col-lg-10 col-md-9 col-sm-12 ">
-                            <div class="mb-3">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" class="form-control"
-                                    placeholder="Enter your name">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-12 ">
-                            <div class="mb-3">
-                                <label for=""></label>
-                                <input type="submit" value="Btn" id="Btn" class="form-control" value="">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <!-- </div> -->
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
-                <div class="ms-5 h1">
-                    <i id="plus" class="bi bi-plus-circle-fill me-3 ms-3"></i>
-                    <i id="minus" class="bi bi-dash-circle-fill"></i>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h1 class="text-center">Create new from using JavaScript</h1>
-        <hr>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 form_main">
-                <div>
-                    <form action="#" class="form2">
-                        <div class="row">
-                            <div class="col-lg-10 col-md-9 col-sm-12 ">
-                                <div class="mb-3">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" class="form-control"
-                                        placeholder="Enter your name">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-12 ">
-                                <div class="mb-3">
-                                    <label for=""></label>
-                                    <input type="submit" value="Btn" id="Btn" class="form-control" value="">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
-                <div class="ms-5 h1">
-                    <i onclick="createForm1()" id="plus1" class="bi bi-plus-circle-fill me-3 ms-3"></i>
-                    <i onclick="removeForm()" id="minus1" class="bi bi-dash-circle-fill"></i>
-                </div>
-            </div>
-        </div>
-
-        <div id="go_to_top" class="goto text-center pt-2">
-            <i class="bi bi-arrow-up-circle-fill"></i>
-        </div>
-
         <!-- Add a Todo list here -->
         <section id="todo-section my-5">
             <h1 class="text-center">Add A Todo list here</h1>
+            <hr>
             <div class="row my-5">
                 <div class="col-md-9">
                     <p>List Here</p>
@@ -191,7 +95,8 @@
 
 
         <!-- daterange picker -->
-        <h1 class="text-center">Date Range Pcicker</h1>
+        <h1 class="text-center mb-3">Date Range Pcicker</h1>
+        <hr>
         <div class="row">
             <div class="col-lg-4">
                 <div id="reportrange">
@@ -200,19 +105,131 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <input type="text" class="form-control" id="inp1" placeholder="start">
+            </div>
+            <div class="col-lg-4">
+                <input type="text" class="form-control" id="inp2" placeholder="end">
+            </div>
+            <h1 class="text-center mt-5" id="show"></h1>
         </div>
-
-
         <!-- End daterange picker  -->
+
+        <!-- Data Table Jquery  -->
+        <h1 class="text-center">Jquery Data Table</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 table-responsive">
+                <table class="table table-bordered table-striped mt-3" id="jtable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Designation</th>
+                            <th>Company</th>
+                            <th>phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Atikur Rahman</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>QNTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Kamruzzaman Sarker</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>Brain Station</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Atikur Rahman</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>QNTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Kamruzzaman Sarker</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>Brain Station</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                        <tr>
+                            <td>Motalib Hossain</td>
+                            <td>24</td>
+                            <td>Developer</td>
+                            <td>TravnetTech</td>
+                            <td>017xxxxxxxxxxxx</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <br>
         <br>
         <br>
         <br>
+        <br>
+
     </div>
 
 
 
-
+    <!------------------------------- bootstrap cdn  ------------------------------->
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -221,17 +238,29 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    date range picker
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script> -->
+    <!----------------------------- date range picker ----------------------------->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-    <!-- main js  -->
+    <!----------------------------- date table jquery ----------------------------->
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <!-- Buttons copu,pdf,csv,print  -->
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <!-- scroller button  -->
+    <script type="text/javascript" src="https://cdn.datatables.net/scroller/2.0.5/js/dataTables.scroller.min.js"></script>
+
+    <!------------------------------------ main js  ------------------------------------>
     <script src="JS_DOM.js"></script>
     <script src="Js_Crud.js"></script>
     <script src="datepicker.js"></script>
+    <script src="datatable.js"></script>
 
 </body>
 

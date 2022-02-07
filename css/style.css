@@ -36,4 +36,36 @@
 .daterangepicker td.active, .daterangepicker td.active:hover {
     border-radius: 52%;
 }
+
+/* -----------------------Data table-----------------------*/
+.table>thead {
+    vertical-align: bottom;
+    background: #2a3ead;
+    color: white;
+}
+/* button icon and search row  */
+.dataTables_wrapper .dataTables_filter {
+    float: none;
+    width: 50%;
+    display: inline-block;
+    /* float: left; */
+}
+.dt-buttons {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+/* button icon and search row  */
+.dataTables_wrapper .dataTables_filter{
+    float: none;
+}
+button.all_button {
+    background: transparent !important;
+    padding: 0px;
+    color: #2a3ead !important;
+    margin-left: 10px !important;
+    /* height: 100%; */
+    border: none;
+}
+
   
