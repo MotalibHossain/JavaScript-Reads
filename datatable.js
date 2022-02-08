@@ -1,6 +1,100 @@
 $(document).ready(function () {
     moment();
+    var data=[
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Atilur Rahman",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"Brain Station-23",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Kamruzzaman Sarker",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"QNTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Atilur Rahman",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"Brain Station-23",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Kamruzzaman Sarker",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"QNTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        },
+        {
+            "Name":"Motalib Hossain",
+            "Age":24,
+            "Designations":"Developer",
+            "Company":"TravnetTech",
+            "phone":"0179124587"
+        }
+    ]
     var table=$("#jtable").DataTable({
+        data:data,
+        columns:[
+            {data:'Name'},
+            {data:"Age"},
+            {data:'Designations'},
+            {data:'Company'},
+            {data:'phone'},
+        ],
         // ----------------------options---------------------- 
         // order: [[orderNo, "desc"]],
         // paging: false,
