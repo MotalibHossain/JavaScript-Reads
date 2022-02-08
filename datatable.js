@@ -1,22 +1,45 @@
 $(document).ready(function () {
-    $("#jtable").DataTable({
+    moment();
+    var table=$("#jtable").DataTable({
+        // ----------------------options---------------------- 
         // order: [[orderNo, "desc"]],
         // paging: false,
         // info: false,
         // searching: false,
-        dom: "Bfrtip",
-        // colReorder: true,
-        // autoFill: {
-        //     editor: editor
-        // }
-        // "pagingType": "scrolling",
         
-        // ----------------for scrolling table -----------------
-        deferRender:    true,
-        scrollY:        200,
-        scrollCollapse: true,
-        scroller:       true,
+        // "pagingType": "scrolling",
+        language: {
+            "paginate": {
+                "next": ">",
+                "previous": "<"
+            }
+        },
+        // pageLength:30,
+        // For custom search functionality 
+        // dom: 'Qlfrtip',
+        // columnDefs: [
+        //     {
+        //         render: (d) => parseInt(d, 10),
+        //         targets: 3
+        //     }
+        // ],
 
+        // ----------------for scrolling table -----------------
+        // deferRender:    true,
+        // scrollY:        200,
+        // scrollCollapse: true,
+        // scroller:       true,
+
+        // --------------Hidden any column in table--------------
+        // "columnDefs": [
+        //     {
+        //         "targets": [ 4 ],
+        //         "visible": false,
+        //         "searchable": false 
+        //     },
+        // ],
+        // -------------Button for copy,csv,pdf,print------------- 
+        dom: "Bfrtip",
         buttons: [
             {
                 extend: 'copy',
@@ -40,4 +63,8 @@ $(document).ready(function () {
             
         ]
     });
+    // -------------------All events-------------------
+    // table.on( 'draw', function () {
+    //     alert( 'Are you want to go this page' );
+    // } );
 });

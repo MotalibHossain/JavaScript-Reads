@@ -38,6 +38,34 @@
 }
 
 /* -----------------------Data table-----------------------*/
+.dtsb-searchBuilder {
+    margin-bottom: 30px;
+}
+.dtsb-group.dtsb-vertical {
+    display: flex;
+}
+/* [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    border: 1px solid red;
+    width: 100px;
+    margin-top: 3px;
+    margin-left: 3px;
+} */
+.dtsb-titleRow {
+    float: right;
+}
+/* -------------table ------------- */
+.tabtable {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-width: 0;
+    color: #333333;
+    -webkit-box-shadow: 0 1px 3px rgb(207 38 38 / 76%), 0 1px 2px rgb(0 0 0 / 61%);
+    box-shadow: 0 1px 3px rgb(207 38 38 / 76%), 0 1px 2px rgb(0 0 0 / 61%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    background: linear-gradient(to bottom, white 0%, #cc08cfeb 100%);
+}
 .table>thead {
     vertical-align: bottom;
     background: #2a3ead;
