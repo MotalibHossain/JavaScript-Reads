@@ -6,12 +6,15 @@
 
 - [x] Selectors.
 - [x] JavaScripts Events.
+- [x] JavaScripts ndition.
+- [x] JavaScripts functions.
 - [x] Traversing.
 - [x] Create form using click event using Jquery.
 - [x] Create form using functional javascript.
 - [x] Compleate javascript Crud Operations.
 - [x] Compleate Jquery Crud Operations.
 - [x] Jquery daterangepicker whole plugin.
+- [x] Jquery DataTable plugin.
 
 
 
