@@ -8,15 +8,15 @@
 - [x] JavaScripts Events.
 - [x] JavaScripts ndition.
 - [x] JavaScripts functions.
-    - [] Optional chaining.
-    - [] Asynchronous callback.
-    - [] Asynchronous callback.
-    - [] callback pattern.
-    - [] Clouser.
-    - [] Hosting.
-    - [] Passing function.
-    - [] Defualt parameter.
-    - [] Implecitt return.
+    - [x] Optional chaining.
+    - [x] Asynchronous callback.
+    - [x] Asynchronous callback.
+    - [x] callback pattern.
+    - [x] Clouser.
+    - [x] Hosting.
+    - [x] Passing function.
+    - [x] Defualt parameter.
+    - [x] Implecitt return.
     
 - [x] Traversing.
 - [x] Create form using click event using Jquery.
