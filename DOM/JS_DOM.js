@@ -1,21 +1,21 @@
 // In the first fime to learn js DOM. You need to know about Selectors.
 // select id wise 
-const heading=document.getElementById("heading2")
-heading.style.color='#786a6c';
+// const heading=document.getElementById("heading2")
+// heading.style.color='#786a6c';
 
 // select class wise
 // getElementsByClassName return an array that's why we use a array indexing
-const heading3=document.getElementsByClassName("heading3");
-heading3[0].style.color='black';
-console.log(heading3)
+// const heading3=document.getElementsByClassName("heading3");
+// heading3[0].style.color='black';
+// console.log(heading3)
 
 // select querySelector wise
-const x=document.querySelector('.heading1');
-x.style.color='black';
+// const x=document.querySelector('.heading1');
+// x.style.color='black';
 
 // select querySelector all wise
-const heading4=document.querySelector('.heading4');
-heading4.style.color='#815d63';
+// const heading4=document.querySelector('.heading4');
+// heading4.style.color='#815d63';
 
 // ==================JavaScripts Events ======================
 
@@ -72,7 +72,7 @@ let company='Travnet Tech';
 let name=`This is our ${company}`;
 const template_string= document.querySelector('.template_string');
 
-template_string.innerHTML=name;
+// template_string.innerHTML=name;
 
 //============== Append a html from using jquery==============
 $(document).ready(function(){
@@ -146,19 +146,6 @@ function removeForm(){
     button_num.remove()
     btn_number-- 
 };
-
-//==============JavaScript Arrow Function==============
-let summation=(...arguments)=>{
-    let sum=0
-    for(let i in arguments){
-        sum=sum+arguments[i];
-        // console.log(sum)
-    }
-    console.log(sum);
-};
-
-summation(10,20,30)
-
 //==============Go to top using javascript==============
 const go_to_top=document.getElementById('go_to_top')
 window.onscroll = function() {Go_to_top()};
@@ -174,4 +161,37 @@ function Go_to_top(){
 go_to_top.addEventListener('click',function(){
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;
+})
+
+
+//======================================================
+                //JavaScript Arrow Function
+// =====================================================
+//JavaScript Arrow Function
+let summation=(...arguments)=>{
+    let sum=0
+    for(let i in arguments){
+        sum=sum+arguments[i];
+        // console.log(sum)
+    }
+    console.log(sum);
+};
+summation(10,20,30)
+
+showloading=()=>{
+    $(".button-1").attr('disabled', 'disabled');
+}
+GetDataFormApi=(callback)=>{
+    console.log("1.Pulling data")
+    setTimeout(()=>{
+        console.log("2.Finish data getting")
+        callback()
+    }, 3000)
+}
+removeloading=()=>{
+    $(".button-1").removeAttr('disabled');
+}
+$(".button-1").click(function(){
+    showloading()
+    GetDataFormApi(removeloading)
 })
