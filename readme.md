@@ -10,7 +10,6 @@
 - [x] JavaScripts functions.
     - [ ] Optional chaining.
     - [ ] Asynchronous callback.
-    - [ ] Asynchronous callback.
     - [ ] callback pattern.
     - [ ] Clouser.
     - [ ] Hosting.
