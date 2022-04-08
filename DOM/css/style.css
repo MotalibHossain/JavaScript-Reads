@@ -13,4 +13,25 @@
     color: white; 
     cursor: pointer; 
 }
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.colum{
+    width: 14.21%;
+    float: left;
+}
+.samecol{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .colum{
+        width: 33.33%;
+        float: left;
+    }
+}
+
   
