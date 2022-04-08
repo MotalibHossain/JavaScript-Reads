@@ -151,27 +151,19 @@ Callbacks and Promises in ES6
   - A 'Promise' is used to handle asynchronous results of an operation. It defers the execution of a code block until an asynchronous request is completed. This way other operations can keep running without interruption.
   - A 'Promise' has 3 states -> 1)Pending 2)Fulfilled, 3)Rejected
 
-<<<<<<< HEAD
 #Resource:
 
 + Events and own custom function: (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
 + Property List: (https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery
-<<<<<<< HEAD
 
-<<<<<<< HEAD
+
 
 + [Events and own custom function] (https://stackoverflow.com/questions/18562616date-range-picker-how-to-fire-an-event-on-entering-a-date)
 + [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
 
-=======
 + [Events and own custom function] (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
     + [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
->>>>>>> 1b999b91dc7127eb272c61d96e5e43001cc4dbb5
->>>>>>> 42f7fa16f390c8351425cb0453641cd77651b2c8
-=======
-=======
+
 
 + [Events and own custom function] (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
     + [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
->>>>>>> 1b999b91dc7127eb272c61d96e5e43001cc4dbb5
->>>>>>> 42f7fa16f390c8351425cb0453641cd77651b2c8
