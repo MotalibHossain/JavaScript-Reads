@@ -153,17 +153,17 @@ Callbacks and Promises in ES6
 
 #Resource:
 
-+ Events and own custom function: (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
-+ Property List: (https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery
++ [Events and own custom function](https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
++ [Property List:](https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
 
 
 
-+ [Events and own custom function] (https://stackoverflow.com/questions/18562616date-range-picker-how-to-fire-an-event-on-entering-a-date)
-+ [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
++ [Events and own custom function](https://stackoverflow.com/questions/18562616date-range-picker-how-to-fire-an-event-on-entering-a-date)
++ [Property List](https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
 
-+ [Events and own custom function] (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
-    + [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
++ [Events and own custom function](https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
+    + [Property List](https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
 
 
-+ [Events and own custom function] (https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
-    + [Property List](Property List:https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
++ [Events and own custom function](https://stackoverflow.com/questions/18562616/date-range-picker-how-to-fire-an-event-on-entering-a-date)
++ [Property List](https://www.codegrepper.com/code-examples/whatever/get+value+daterangepicker+when+load+in+jquery)
