@@ -346,7 +346,7 @@ array 2: length=5 last=j,o,n,e,s
 ```
 arr2 is just a reference to arr1 and array.push(['j','o','n','e','s']) adds the array ['j','o','n','e','s'] as a single item to the end of the array.
 
-### Addition and Subtraction
+<h1>Addition and Subtraction</h1>
 
 ```
 console.log(1 +  "2" + "2");
